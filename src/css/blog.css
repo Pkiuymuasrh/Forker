@@ -1,0 +1,92 @@
+#move{
+    position: relative;
+    animation: move-words 4s linear infinite;
+    margin: 135px;
+  }
+  
+  @keyframes move-words {
+    0% {
+      transform: translateY(-50%);
+      opacity: calc(0);
+    }
+    100% {
+      transform: translateY(-80%);
+    }
+  }
+
+/* Marquee Container */
+.marquee {
+    display: flex; /* Display items in a row */
+    overflow: hidden; /* Hide overflow content */
+    padding: 10px 0; /* Padding around marquee */
+    margin-top: 20px; /* Margin top for spacing */
+    width: 100%; /* Ensure full width */
+  }
+  
+  /* Marquee Item */
+  .marquee-item {
+    flex: 0 0 auto; /* Do not grow or shrink */
+    width: 240px; /* Adjusted width */
+    height: 279px; /* Adjusted height */
+    margin-right: 20px; /* Margin between items */
+    border-radius: 8px; /* Rounded corners */
+    animation: marquee 10s linear infinite; /* Animation properties */
+  }
+  
+  /* Keyframe animation for each marquee item */
+  @keyframes marquee {
+    0% { transform: translateX(0); } /* Start position */
+    100% { transform: translateX(-100%); } /* End position */
+  }
+  
+  /* Delayed animation for each item */
+  .marquee-item:nth-child(2) {
+    animation-delay: 1s; /* Delay the animation of the 2nd item by 5 seconds */
+  }
+  
+  .marquee-item:nth-child(3) {
+    animation-delay: 2s; /* Delay the animation of the 3rd item by 10 seconds */
+  }
+  
+  .marquee-item:nth-child(4) {
+    animation-delay: 3s; /* Delay the animation of the 4th item by 15 seconds */
+  }
+  .marquee-item:nth-child(5) {
+    animation-delay: 4s; /* Delay the animation of the 4th item by 15 seconds */
+  }
+  .marquee-item:nth-child(6) {
+    animation-delay: 5s; /* Delay the animation of the 4th item by 15 seconds */
+  }
+  .marquee-item:nth-child(7) {
+    animation-delay: 6s; /* Delay the animation of the 4th item by 15 seconds */
+  }
+  .marquee-item:nth-child(8) {
+    animation-delay: 7s; /* Delay the animation of the 4th item by 15 seconds */
+  }
+  /* Add more nth-child styles for additional items as needed */
+  
+  .card {
+    text-align: center; /* Center align content horizontally */
+    padding: 20px; /* Padding around the card */
+    border: 1px solid #ccc; /* Border for the card */
+    border-radius: 40px; /* Rounded corners */
+    width: 450px; /* Fixed width for each card */
+    height: 600px; /* Fixed height for each card */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center; /* Center content vertically */
+  }
+  
+  .card-image {
+    width: 250px; /* Adjust image width */
+    height: 250px; /* Adjust image height */
+    margin-bottom: 10px; /* Margin bottom for spacing */
+  }
+  
+  .card-text {
+    font-size: 18px; /* Adjust text size */
+    color: rgb(130, 135, 138);
+  }
+  .siu{
+    background-color: #E7EA47;
+  }
